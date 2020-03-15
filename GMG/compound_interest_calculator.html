@@ -14,29 +14,46 @@
 <div class="input">
 	<p id="title">複息計算機</p>
 	<p> 本金： <input type="text" name="original" id="original"></p>
-	<p> 年息： <input type="text" name="original" id="interest"></p>
-	<p> 年期： <input type="text" name="original" id="period"></p>
+	<p id="int"> 利息(%)： <input type="text" name="original" id="interest"></p>
+	<p id="per"> 時長(月)： <input type="text" name="original" id="period"></p>
 	<div class="btn-group btn-group-toggle" data-toggle="buttons">
 	  <label class="btn btn-secondary active">
-	    <input type="radio" name="options" id="option1" autocomplete="off" checked> 月複息
+	    <input type="radio" name="options" id="option1" autocomplete="off" value="monthly" checked
+	    onclick="choose(this.value)" > 月複息
 	  </label>
 	  <label class="btn btn-secondary">
-	    <input type="radio" name="options" id="option2" autocomplete="off"> 年複息
+	    <input type="radio" name="options" id="option2" autocomplete="off" value="yearly"
+	    onclick="choose(this.value)"> 年複息
 	  </label>
 	</div>
 
 	<input type="button" onclick="calculate()"id="confirm" value="確定">
 
-
-
 </div>
 
 
 
-<script type="text/javascript" src="functions.js"></script>
+<script>
+function choose(option) {
+	if (option=="monthly"){
+		document.getElementById(per).innerHTML="時長(月)";
+
+	}
+	else{
+		document.getElementById(per).innerHTML="時長(年)";
+	}
+}
 
 
 
+function calculate(){
+
+
+
+}
+
+
+</script>
 
 
 
