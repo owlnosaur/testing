@@ -11,7 +11,7 @@ var key_mapping = {
     "w": 12, "e": 14, "r": 16, "t": 17, "y": 19, "u": 21, "i": 23,
     // Black keys of the second octave
     "3": 13, "4": 15, "6": 18, "7": 20, "8": 22
-}
+};
 
 function handleNoteOn(key_number) {
     // Find the pitch
@@ -33,7 +33,7 @@ function handleNoteOn(key_number) {
      * You need to handle the chord mode here
      */
 
-    var mode_chosen=$(":radio[name=mode_option]:checked").val()
+    var mode_chosen=$(":radio[name=mode_option]:checked").val();
     if (mode_chosen=="major"){
         pitch1=pitch+4;
         pitch2=pitch+7;
@@ -51,7 +51,7 @@ function handleNoteOn(key_number) {
 
 function handleNoteOff(key_number) {
     // Find the pitch
-    var pitch = parseInt($("#pitch_slider").val())+key_number;;
+    var pitch = parseInt($("#pitch_slider").val())+key_number;
     /*
      * You need to use the slider to get the lowest pitch number above
      * rather than the hardcoded value
@@ -64,7 +64,7 @@ function handleNoteOff(key_number) {
      * You need to handle the chord mode here
      */
 
-    var mode_chosen=$(":radio[name=mode_option]:checked").val()
+    var mode_chosen=$(":radio[name=mode_option]:checked").val();
     if (mode_chosen=="major"){
         pitch1=pitch+4;
         pitch2=pitch+7;
@@ -216,9 +216,7 @@ $(document).ready(function() {
 });
 
 
-funtion hi(){
-     alert("Hello! I am an alert box!!");
-}
+
 
 
 
