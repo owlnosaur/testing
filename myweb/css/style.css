@@ -3,7 +3,7 @@ body{margin:0;position: relative;min-height: 100%;top: 0;}
 ul.horizontal_bar{list-style-type: none;margin: 0;padding: 0;background-color: rgb(50,50,50); overflow: hidden;}
 li.top_bar{display: inline; width: 20%;}
 #icon{width:15%;height: 15%;}
-a.menu{display: inline-block;min-width:10%; max-width:20%; font-size:3vw; padding:1vw;color: white; vertical-align: super;}
+a.menu{display: inline-block;min-width:10%; max-width:20%; font-size:5vw; padding:1.5vw;color: white; vertical-align: super;}
 
 
 /* left bar*/
