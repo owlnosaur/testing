@@ -13,9 +13,9 @@
 
 <div class="input">
 	<p id="title">複息計算機</p>
-	<p> 本金： <input type="text" name="original" id="original"></p>
-	<p id="int"> 利息(%)： <input type="text" name="original" id="interest"></p>
-	<p id="per"> 時長(月)： <input type="text" name="original" id="period"></p>
+	<p> 本金:<input type="text" name="original" id="original">元</p>
+	<p> 利息:<input type="text" name="original" id="interest">%</p>
+	<p> 時長:<input type="text" name="original" id="period">月/年</p>
 	<div class="btn-group btn-group-toggle" data-toggle="buttons">
 	  <label class="btn btn-secondary active">
 	    <input type="radio" name="options" id="option1" autocomplete="off" value="monthly" checked
@@ -32,22 +32,30 @@
 </div>
 
 
-
 <script>
 function choose(option) {
 	if (option=="monthly"){
-		document.getElementById(per).innerHTML="時長(月)";
-
+		method=0;
 	}
 	else{
-		document.getElementById(per).innerHTML="時長(年)";
+		method=1;
 	}
 }
 
-
+var method=0;
 
 function calculate(){
+	var a= parseInt(document.getElementById("original").value);
+	var b= parseInt(document.getElementById("interest").value);
+	var c= parseInt(document.getElementById("period").value);
 
+	if (method==0){
+		alert(a+b+c);
+	}
+	else{
+
+		alert(a-b-c);
+	}
 
 
 }
