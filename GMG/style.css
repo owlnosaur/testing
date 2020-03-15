@@ -6,18 +6,25 @@ body{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 10vw;
 }
 #title{
-	position: fixed;	
-	left: 40%;
-	font-size:5vw;
-}
-
-.input{
-	position: fixed;
-	left: 35%;
+	height: 5vh;
 	font-size:5vw;
 	
 }
 
+.input{
+	height: 5vh;
+	font-size:5vw;
+	text-align: center;
+}
+
+#original, #interest, #period{
+	width: 20%;
+}
+
+#confirm{
+	padding: 10vw,10vw;
+	font-size: 20vw;
+}

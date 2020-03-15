@@ -4,30 +4,36 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>複息計算機</title>
 <link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" href="functions.js"></script>
 </head>
 <body>
 
 
 <img id="icon" src="icon.png">
-	
-<div class="calculator">
-	<p id="title">複息計算機</p><br><br><br><br><br>
-	<div class="input">
+
+
+<div class="input">
+	<p id="title">複息計算機</p>
 	<p> 本金： <input type="text" name="original" id="original"></p>
-	<p> 年息： <input type="text" name="original" id="original"></p>
-	<p> 年期： <input type="text" name="original" id="original"></p>
-	
+	<p> 年息： <input type="text" name="original" id="interest"></p>
+	<p> 年期： <input type="text" name="original" id="period"></p>
+	<div class="btn-group btn-group-toggle" data-toggle="buttons">
+	  <label class="btn btn-secondary active">
+	    <input type="radio" name="options" id="option1" autocomplete="off" checked> 月複息
+	  </label>
+	  <label class="btn btn-secondary">
+	    <input type="radio" name="options" id="option2" autocomplete="off"> 年複息
+	  </label>
 	</div>
+
+	<input type="button" onclick="calculate()"id="confirm" value="確定">
+
+
 
 </div>
 
 
 
-
-
-
-
+<script type="text/javascript" src="functions.js"></script>
 
 
 
