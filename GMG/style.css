@@ -31,4 +31,19 @@ table{
 	font-weight: bold;
 }
 .col2{width: 80%;}
+.options{
+	text-align: center;
+	font-size: 5vw;
+}
+
+.confirm{
+	text-align: center;
+	font-size: 5vw;
+}
+
+.output{
+	text-align: center;
+	font-size: 5vw;
+}
+p {margin: 0;}
 

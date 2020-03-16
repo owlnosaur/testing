@@ -27,45 +27,81 @@
 	<tr>
 		<th class="col1">期數:<th>
 		<td class="col2"><input type="text" name="period" id="period"><th>
-		<td class="col3">月</td>
+		<td class="col3" id="period_option">月</td>
 	</tr>		
-
-
-
-
 </table>
 
+<div class="options">
+	<label>
+		<input type="radio" name="options" id="option1" value="monthly" onclick="choose(this.value)"checked>月複息
+	</label>
+	<label>
+		<input type="radio" name="options" id="option1" value="yearly" onclick="choose(this.value)">年複息
+	</label>
+</div>
 
+<div class="confirm">
+	<button onclick="calculate()">
+	確定
+	</button>
+
+</div>
+
+<div class="output">
+	<p id=output1></p>
+	<p id=output2></p>
+</div>	
 
 
 
 <script>
+var method=0;
+var answer=0;
 function choose(option) {
 	if (option=="monthly"){
 		method=0;
+		document.getElementById("period_option").innerHTML="月";
 
 	}
 	else{
 		method=1;
-\	}
+		document.getElementById("period_option").innerHTML="年";
+	}
 }
 
-var method=0;
+
 
 function calculate(){
 	var a= parseInt(document.getElementById("original").value);
 	var b= parseInt(document.getElementById("interest").value);
 	var c= parseInt(document.getElementById("period").value);
+	b=b/100;
+
+	var r;
+	var anw;
 
 	if (method==0){
-		alert(a+b+c);
+		r=(1+b/12);
+		r=Math.pow(r,c);
 	}
 	else{
-
-		alert(a-b-c);
+		r=(1+b);
+		r=Math.pow(r,c);
 	}
+	answer=a*r;
+	show();
+}
 
-
+function show(){
+	var unit;
+	if (method==0){
+		unit="個月後:"
+	}
+	else{
+		unit="年後:"
+	}
+	document.getElementById("output1").innerHTML=parseInt(document.getElementById("interest").value)+unit;
+	document.getElementById("output2").innerHTML=answer+"元";
 }
 
 
