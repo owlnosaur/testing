@@ -10,36 +10,44 @@
 
 <img id="icon" src="icon.png">
 
+<p id="title">複息計算機</p>
 
-<div class="input">
-	<p id="title">複息計算機</p>
-	<p> 本金:<input type="text" name="original" id="original">元</p>
-	<p> 利息:<input type="text" name="original" id="interest">%</p>
-	<p> 時長:<input type="text" name="original" id="period">月/年</p>
-	<div class="btn-group btn-group-toggle" data-toggle="buttons">
-	  <label class="btn btn-secondary active">
-	    <input type="radio" name="options" id="option1" autocomplete="off" value="monthly" checked
-	    onclick="choose(this.value)" > 月複息
-	  </label>
-	  <label class="btn btn-secondary">
-	    <input type="radio" name="options" id="option2" autocomplete="off" value="yearly"
-	    onclick="choose(this.value)"> 年複息
-	  </label>
-	</div>
 
-	<input type="button" onclick="calculate()"id="confirm" value="確定">
+<table>
+	<tr>
+		<th class="col1">本金:<th>
+		<td class="col2"><input type="text" name="original" id="original"><th>
+		<td class="col3">元</td>
+	</tr>		
+	<tr>
+		<th class="col1">年利息:<th>
+		<td class="col2"><input type="text" name="interest" id="interest"><th>
+		<td class="col3">%</td>
+	</tr>		
+	<tr>
+		<th class="col1">期數:<th>
+		<td class="col2"><input type="text" name="period" id="period"><th>
+		<td class="col3">月</td>
+	</tr>		
 
-</div>
+
+
+
+</table>
+
+
+
 
 
 <script>
 function choose(option) {
 	if (option=="monthly"){
 		method=0;
+
 	}
 	else{
 		method=1;
-	}
+\	}
 }
 
 var method=0;
