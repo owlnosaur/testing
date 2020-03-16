@@ -1,12 +1,12 @@
 body{
-	background-color: aqua;
+	background-color: white;
 }
 
 #icon{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 10vw;
+	width: 25vw;
 
 }
 #title{
@@ -14,6 +14,7 @@ body{
 	font-size:5vw;
 	text-align: center;
 	font-weight: bold;
+	margin: 5vw;
 }
 table{
 	width: 100%;
