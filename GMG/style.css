@@ -1,12 +1,10 @@
-body{
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-image: url("background.png");
-	background-size: cover;
+html { 
+  background: url(background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
-
 
 #icon{
 	display: block;
