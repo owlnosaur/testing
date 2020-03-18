@@ -26,8 +26,9 @@ body{
 	text-align: center;
 	font-weight: bold;
 	margin: 5vw;
-	color: black;
+	color:gold;
 	font-family: Snell Roundhand, cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 table{
@@ -39,6 +40,7 @@ table{
 	height: 5vw;
 	background-color:rgb(200,200,200); 
 	color: rgb(0,0,0);
+	font-weight: 5vw;
 }
 
 .col1, .col3{
@@ -46,8 +48,9 @@ table{
 	font-size:5vw;
 	vertical-align: sub;
 	font-weight: bold;
-	color: rgb(10,10,10);
+	color:gold;
 	font-family: Snell Roundhand, cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .col2{
 	width: 80%;
@@ -57,32 +60,36 @@ table{
 	text-align: center;
 	font-size: 5vw;
 	font-weight: bold;
-	color: rgb(10,10,10);;
+	color:gold;
 	font-family: Snell Roundhand, cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .confirm{
 	text-align: center;
 	padding: 2vw;
-	font-size: 100%;
-	font-weight: bold;
-	color: rgb(10,10,10);
-	font-family: Snell Roundhand, cursive;
+	color:rgb(200,200,200);
+	
 }
 
 #confirm_button{
 	width: 10vw;
-	height: 5vh;
+	height: 5vw;
+	font-size: 3vw;
+	font-weight: bold;
+	color:gold;
+	font-family: Snell Roundhand, cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 
 
 #output1,#output2{
 	text-align: center;
 	font-size: 10vw;
 	font-weight: bold;
+	color:gold;
 	font-family: Snell Roundhand, cursive;
-	color:rgb(0,0,0);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 p {margin: 0;}
 
