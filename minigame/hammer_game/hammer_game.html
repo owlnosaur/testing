@@ -39,10 +39,13 @@
 		            showMonsterTimeout=setTimeout(showMonster,timeToHideMonster);
 		            score=score+1;
 		            document.getElementById("score").textContent=score;
+		            if (timeToHideMonster>1000){
+		            	timeToHideMonster=timeToHideMonster-50;
+		            	timeToShowMonster=timeToShowMonster-50;                            
+		            }
         	});
         	ready=1;
-        }
-        
+        }   
     }
     function showMonster() {
     	document.getElementById("message").innerHTML="打柒佢";
@@ -116,9 +119,9 @@ html,body,button,p,h1{margin: 0;background-color: black;text-align: center;}
 
 #start_button{
 	text-align: center;
-	width: 10vw;
-	height: 5vw;
-	font-size: 3vw;
+	width: 20vw;
+	height: 15vw;
+	font-size: 10vw;
 	font-weight: bold;
 	color: start;
 	background-color: white;
