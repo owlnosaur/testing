@@ -39,7 +39,7 @@
 		            showMonsterTimeout=setTimeout(showMonster,timeToHideMonster);
 		            score=score+1;
 		            document.getElementById("score").textContent=score;
-		            if (timeToHideMonster>1000){
+		            if (timeToHideMonster>500){
 		            	timeToHideMonster=timeToHideMonster-50;
 		            	timeToShowMonster=timeToShowMonster-50;                            
 		            }
@@ -135,7 +135,7 @@ html,body,button,p,h1{margin: 0;background-color: black;text-align: center;}
 <h1 id="score">0</h1>
 <div class="game_area">
 	<div class="hole">
-		<img id="monster" src="monster.png" alt="No Monster">
+		<img id="monster" src="monster.jpg" alt="No Monster">
 	</div> 
 	<div class="hole"></div> 
 	<div class="hole"></div> 
